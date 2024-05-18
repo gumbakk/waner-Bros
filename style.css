@@ -1,0 +1,314 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2e9e9;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    font: italic;
+}
+nav a{
+    display:inline-flexbox;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #59585c;
+    
+}
+nav a{
+    color: #3305d8;
+    font: italic;
+    position:left;
+    display: inline;
+    
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    position: sticky;
+    display:inline;
+}
+nav .menu{
+    display: inline;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fbfbfb;
+    letter-spacing: 1px;
+}
+
+footer{
+
+    display: inline;
+}
+.search{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(251, 245, 245, 0.8);
+    display: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0px 20px;
+    justify-content: flex-end;
+}
+.search input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search i{
+    color: #1a03e1;
+}
+nav .menu li a:hover{
+    background-color: #e8ebf3;
+    color: #b71d1d;
+    box-shadow: 5px 10px 30px rgba(43, 40, 239, 0.1);
+    transition: all ease;
+}
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(88, 65, 65);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+.toggle-icon{
+    color: rgb(37, 176, 16);
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(199, 25, 25);
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#main-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1170px;
+    width: 100%;
+}
+.main-slider-box{
+    width: 100%;
+    height: 450px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #0e0e0ec2;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+.main-slider-img{
+    width: 100%;
+    height: 100%;
+}
+.main-slider-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main-slider-text{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(360deg, #0e0d0db9 35%, rgba(73,73,73,0.23) 64%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+.main-slider-text .quality{ 
+    background-color: #e70634;
+    color: #080808;
+    font-weight: 600;
+    padding: 0px 5px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.main-slider-text .movie-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-slider-text .movie-name span{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgba(240,240,240,0.82);
+}
+.main-slider-text .movie-name strong
+.main-slider-text .movie-name a{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #dfdfdf;
+    letter-spacing: 0.5px;
+}
+.main-slider-text .category{
+    color: #969696;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.main-slider-text .category a{
+    color: #f5efef;
+    margin: 0px 3px
+}
+strong{
+    color: #fcf9f9;
+}
+.rating img{
+    height: 10px;
+    width: 20px;
+    object-fit: contain;
+    object-position: centre;
+}
+.rating{
+    font-size: 0.8rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.main-slider-text .category-rating{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.main-slider-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 100%;
+    background-color: rgba(27,27,27,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: #ffffff;
+    transition: all ease 0.3s;
+    z-index: 2;
+}
+.main-slider-overlay i{
+    font-size: 2rem;
+}
+.main-slider-box:hover .main-slider-overlay{
+   
+}
+#latest{
+    max-width: 1170px;
+    margin: 30px auto;
+    width: 100%;
+}
+.latest-heading{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0e0e0ec2;
+    border: 1px solid #e75c0c;
+    border-radius: 30px;
+}
+.latest-heading h1{
+    color: #dadada;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.post-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 20px 0px;
+}
+.post-box{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background-color: #080707c2;
+    border: 1px solid #161616b9;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.15);
+    position: relative;
+
+}
+.post-box .post-img{
+    width: 100%;
+    height: 100%;
+}
+.post-box .post-img img{
+    width: 100%;
+    height: 100%;
+    object-position: top centre;
+    object-fit: cover;
+}
+.main-slider-text .movie-name a:hover{
+    opacity: 1;
+    transition: all ease 5s;
+    background-color: #b71d1d;
+}
+.page-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0837df;
+    margin-top: 50px;
+}
+.page-number a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeeff2;
+    margin: 0px 13px;
+    opacity: 0.5;
+}
+p{
+    color: #ffffff;
+}
+p{
+    color: #fffcfc;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer img{
+
+    width: 1cm;
+    height: 1cm;
+}
+
+footer P{
+    color: #080808;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+body img :hover{
+
+    background-color: #080707c2;
+}
